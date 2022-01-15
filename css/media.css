@@ -1,0 +1,130 @@
+/* Responsive For NodePad */
+
+@media (max-width:912px){
+    .navbar .nav_item ul{
+        position: absolute;
+        top: 0;
+        right: -850px;
+        background-color: var(--blue);
+        flex-direction: column;
+        width: 330px;
+        height: 100vh;
+        transition: 0.5s ease-in-out;
+    }
+    .navbar .nav_item ul.show{
+        right: 0;
+    }
+    .navbar .nav_item ul li{
+        margin-left:0px;
+        padding:2rem 3rem;
+    }
+    .big{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .big:hover{
+        background-color: var(--green);
+        color: #fff !important;
+    }
+    .navbar .nav_item ul li a{
+        color: #fff;
+    }
+    .bars{
+        display: block;
+    }
+
+    /* Home */
+    #home{
+        background-position: 5% 10%;
+    }
+    #service .about_main{
+        flex-direction: column;
+    }
+    #service .about_text{
+        margin-top: 2rem;
+    }
+}
+
+/* Responsive For Tab */
+@media (max-width:768px){
+    #third_about .ab_thirdMain{
+        flex-direction: column;
+    }
+    #testimonials .testimonial_main{
+        flex-direction: column;
+    }
+    #testimonials .testimonial_main .left {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    #testimonials .testimonial_main .left .rating_box{
+        justify-content: center;
+    }
+    #team .card_main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .pricing_main{
+        flex-direction: column;
+    }
+    .faq_main{
+        justify-content: center;
+    }
+    #work .popup_model{
+        width: 100%;
+    }
+}
+
+/* Responsive For Mobile */
+@media (max-width:468px){
+    #home .home_content {
+        width: 100%;
+        padding-top: 120px;
+    }
+    .partners_box{
+        flex-direction: column;
+    }
+    #service .about_img{
+        width: 100%;
+    }
+    #service .about_text {
+        width: 100%;
+    }
+    #service .about_text h1 {
+        font-size: 1.5rem;
+    }
+    #third_about .ab_thirdMain .left {
+        width: 100%;
+    }
+    #third_about .ab_thirdMain .left #features{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #third_about .ab_thirdMain .left #features .f_title {
+        margin-top: 20px;
+        text-align: center;
+    }
+    #third_about .ab_thirdMain .right{
+        width: 100%;
+    }
+    #project{
+        height: auto;
+    }
+    .project_wrap{
+        flex-direction: column;
+    }
+    #testimonials .testimonial_main .right{
+        width: 100%;
+    }
+    .pricing_main .right{
+        flex-direction: column;
+    }
+    .pricing_main .right .two {
+        margin-top: 2rem;
+    }
+}
